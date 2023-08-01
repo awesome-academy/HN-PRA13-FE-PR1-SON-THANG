@@ -1,0 +1,157 @@
+.banner {
+  background-image: url("../assets/images/banner.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  //   height: 860px;
+  .banner-content {
+    .banner-content__product {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      font-family: "Open Sans", sans-serif;
+      img {
+        width: 300px;
+      }
+      .product-title {
+        color: #789629;
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 129px;
+      }
+      .product-sub-title {
+        font-size: 18px;
+        font-weight: 300;
+        color: #774f47;
+      }
+      .product-sub-price {
+        color: #789629;
+        font-size: 41px;
+        margin-bottom: 18px;
+      }
+
+      .product-link {
+        font-size: 16px;
+        color: #353535;
+        text-decoration: underline;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.banner-bottom {
+  ul {
+    margin: 20px 0;
+    li {
+      text-align: center;
+      color: #1a1a1a;
+      font-size: 13px;
+      font-weight: 600;
+      &:nth-child(2) {
+        border-left: 1px solid #c2c2c2;
+        border-right: 1px solid #c2c2c2;
+      }
+    }
+  }
+}
+section.home-section {
+  margin-top: 14px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .row {
+    --bs-gutter-x: 0.6rem;
+    --bs-gutter-y: 0.6rem;
+  }
+  .home-section__bg {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-family: "Roboto Slab", serif;
+    &.bg-yellow {
+      background-color: #e3ce33;
+      color: #fff;
+    }
+    &.bg-grey {
+      background-color: #cbd3df;
+      color: #1a1a1a;
+    }
+
+    &.bg-blue {
+      background-color: #88d8da;
+      color: #1a1a1a;
+    }
+    &.bg-pink {
+      background-color: #f49ac2;
+      color: #1a1a1a;
+    }
+    &.product-img {
+      display: flex;
+      flex-direction: column;
+      font-family: "Playball", cursive;
+      font-size: 68px;
+      img {
+        width: 156px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+section.home-review {
+  margin-top: 90px;
+  .home-review__wapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url("../assets/images/review-background.png");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: auto;
+    .avatar {
+      display: block;
+      height: 146px;
+      width: 146px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #cbd4b3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        padding: 12px;
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+    .home-review__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 60%;
+      justify-content: center;
+      font-weight: 400;
+      z-index: 1;
+      font-size: 15px;
+      padding: 0 40px;
+      .author {
+        width: 100%;
+        font-size: 14px;
+        color: 131313;
+        font-family: "Open Sans", sans-serif;
+        span:first-child {
+          text-transform: uppercase;
+        }
+        span:nth-of-type(2) {
+          font-style: italic;
+          color: #737373;
+        }
+      }
+    }
+  }
+}
