@@ -1,0 +1,21 @@
+extends layout.pug
+
+block content  
+    .container
+        include ./breadcrumb
+        .login-top 
+            h1 Đăng nhập 
+            button.btn.btn-dark.text-uppercase(type='submit') Đăng ký
+        form.login-form
+            h2 Khách hàng đăng ký
+            p Nếu có một tài khoản vui lòng đăng nhập
+            .mb-3
+                label.form-label(for='exampleInputEmail1') Địa chỉ email*
+                input#exampleInputEmail1.form-control(type='email' aria-describedby='emailHelp')
+                //- #emailHelp.form-text We&apos;ll never share your email with anyone else.
+            .mb-3
+                label.form-label(for='exampleInputPassword1') Password*
+                input#exampleInputPassword1.form-control(type='password')
+            .mb-3
+                a(href="#") Quên mật khẩu
+                button.btn.btn-dark.text-uppercase(type='submit') Đăng nhập

@@ -1,0 +1,21 @@
+footer {
+  padding: 20px 0;
+  background-color: #050505;
+  i {
+    color: #789629;
+  }
+  section {
+    color: #494949;
+    font-size: 14px;
+
+    h6 {
+      color: #d1d1d1;
+      font-size: 18px;
+    }
+    p {
+      &:hover {
+        color: #789629;
+      }
+    }
+  }
+}

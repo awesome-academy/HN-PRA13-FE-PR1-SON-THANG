@@ -1,0 +1,31 @@
+#header {
+  height: var(--header-height);
+  nav.bg-light {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba($color: #f1f1f1, $alpha: 0.5) !important;
+    .navbar-nav {
+      .nav-link {
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--text-color);
+      }
+      .nav-item.active {
+        .nav-link {
+          color: #789629;
+        }
+      }
+    }
+    .left-icon {
+      i {
+        cursor: pointer;
+        padding: 20px;
+      }
+    }
+  }
+  .navbar-brand {
+    font-size: 34px;
+    color: var(--text-color);
+    font-weight: 500;
+    font-style: italic;
+  }
+}

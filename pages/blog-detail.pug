@@ -1,0 +1,81 @@
+extends layout.pug
+
+block content  
+    section#blog-detail
+    .container
+        include ./breadcrumb
+        .blog-detail-wapper      
+            h1.text-uppercase Blog     
+            .row 
+                .col.col-3                 
+                    .blog__sidebar
+                        h2.blog-list__heading.text-uppercase Bài viết mới nhất
+                        ul.blogg-list 
+                            li.blog-list__item 
+                                .blog-list__item-img
+                                    img(src="../assets/images/blog2.jpg" alt="Product banner")
+                                .blog-list__item-content 
+                                    span.blog-list__item-time   11/Tháng 5
+                                    span.blog-list__item-author Đăng bởi Nguyễn Văn Sơn
+                            li.blog-list__item 
+                                .blog-list__item-img
+                                    img(src="../assets/images/blog2.jpg" alt="Product banner")
+                                .blog-list__item-content 
+                                    span.blog-list__item-time   11/Tháng 5
+                                    span.blog-list__item-author Đăng bởi Nguyễn Văn Sơn
+                            li.blog-list__item 
+                                .blog-list__item-img
+                                    img(src="../assets/images/blog2.jpg" alt="Product banner")
+                                .blog-list__item-content 
+                                    span.blog-list__item-time   11/Tháng 5
+                                    span.blog-list__item-author Đăng bởi Nguyễn Văn Sơn
+                    .blog__tag
+                        h2.text-uppercase Blog tags
+                        ul.blog-tag__list 
+                            each val in ["Đồng hồ", "Túi", "Phụ kiện", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Trẻ em", "Thời trang nữ" ]
+                                li.blog-tag__item 
+                                    button.btn.btn-success= val                
+                        ul.blog-tag__list 
+                            li.blog-tag__item 
+                                button.btn.btn-success Đồng hồ 
+                            li.blog-tag__item 
+                                button.btn.btn-light Túi  
+                            li.blog-tag__item 
+                                button.btn.btn-light Phụ kiện 
+                            li.blog-tag__item 
+                                button.btn.btn-light Giày 
+                            li.blog-tag__item 
+                                button.btn.btn-light Sandal 
+                            li.blog-tag__item 
+                                button.btn.btn-light Áo sơ mi 
+                            li.blog-tag__item 
+                                button.btn.btn-light Nước hoa 
+                            li.blog-tag__item 
+                                button.btn.btn-light Trẻ em
+                            li.blog-tag__item 
+                                button.btn.btn-light Thời trang nữ 
+                .col.col-9 
+                    .blog__main-content
+                        img(src="../assets/images/blog1.jpg" alt="Product banner")
+                        h2.blog-current__heading.text-uppercase Nàng béo không ngại diện áo nỗi bật
+                        p.blog-current__description Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.Trong tiết xuân hè, nàng ngoại cỡ thắp sáng phong cách bằng quần họa tiết nhiệt đới đi kèm áo sơ mi nhã nhặn.Trang phục họa tiết điện tử được nàng phối cùng chân váy kẻ caro, làm nên style vừa hiện đại, vừa phảng phất nét cổ điển.Lối diện đồ hàng ngày đơn giản, khỏe khoắn của cô khi kết hợp chất liệu jean.Nữ blogger rực rỡ khi hòa trộn các gam đỏ, hồng, tím... một cách vui tươi, kèm theo các phụ kiện điệu đà. 
+                        span.blog-current-author Đăng bởi Nguyễn Văn Sơn   
+                        div 
+                            a(href="#") Đọc thêm    
+                            span 23 Bình luận 
+                        span.blog-current-tag Tag: 
+                            Strong Men
+                        form
+                            .row.mb-3
+                                label.col-sm-2.col-form-label Tên*
+                                .col-sm-10
+                                    input.form-control(type='text')
+                            .row.mb-3
+                                label.col-sm-2.col-form-label Email*
+                                .col-sm-10
+                                    input.form-control(type='email')                             
+                            .row.mb-3
+                                label.col-sm-2.col-form-label Ý kiến*
+                                .col-sm-10
+                                    textarea.form-control( style='height: 100px')                            
+                            button.btn.btn-dark(type='button') Gửi ý kiến

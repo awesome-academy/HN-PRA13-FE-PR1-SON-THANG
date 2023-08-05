@@ -3,93 +3,306 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Borel&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&amp;family=Playball&amp;family=Roboto+Slab:wght@300&amp;family=Source+Sans+3:wght@300;400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Borel&amp;family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&amp;family=Playball&amp;family=Roboto+Slab:wght@300&amp;family=Source+Sans+3:wght@300;400&amp;display=swap" rel="stylesheet">
+    <!--font-icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Project1</title>
   </head>
-  <body> </body>
-  <header class="header">
-    <h1 class="header__heading"> Header</h1>
-  </header>
-  <div class="banner"> 
-    <div class="banner-content container-xxl"> 
-      <div class="banner-content__product"><img src="../assets/images/banner-product.png" alt="Product banner">
-        <h1 class="product-title">Green vera</h1>
-        <div class="product-sub-title">Sản phẩm tinh dầu dưỡng da mới nhất của Mandala </div>
-        <div class="product-sub-price">Giá chỉ  750.000đ</div><a class="product-link" href="#">Mua hàng</a>
-      </div>
-    </div>
-  </div>
-  <div class="container-xxl banner-bottom">
-    <ul class="row">   
-      <li class="col col-4"> <i class="fa-solid fa-plane"></i>
-        <p>Miễn phí vận chuyển             </p>
-      </li>
-      <li class="col col-4"> <i class="fa-solid fa-gift"></i>
-        <p>Nhận ngay quà trị giá 350.000đ</p>
-      </li>
-      <li class="col col-4"> <i class="fa-solid fa-star"></i>
-        <p>Giảm 30% cho đơn hàng trên 5.000.000đ</p>
-      </li>
-    </ul>
-  </div>
-  <section class="home-section"> 
-    <div class="container-xxl">       
-      <div class="row">   
-        <div class="col col-6">                    
-          <div class="row"> 
-            <div class="col col-6"> <img src="../assets/images/product1.png" alt="Product1"></div>
-            <div class="col col-6">
-              <div class="home-section__bg bg-yellow">
-                <h3>Sữa tắm</h3>
-              </div>
-            </div>
-            <div class="col col-6">
-              <div class="home-section__bg bg-grey">
-                <h3>Nước hoa</h3>
-              </div>
-            </div>
-            <div class="col col-6"> <img src="../assets/images/product1.png" alt="Product1"></div>
+  <body> 
+    <header id="header"> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase fixed-top shadow-sm">
+        <div class="container"><a class="navbar-brand" href="/">Mandana</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto justify-content-center" style="flex:1;">
+              <li class="nav-item active"><a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="./blog-detail.html">Giới thiệu</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="./list.html">Tất cả sản phẩm</a><a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Bản đồ</a></li>
+              <li class="nav-item"><a class="nav-link" href="./contact.html">Liên hệ</a></li>
+            </ul>
+            <div class="left-icon"><i class="fa-solid fa-cart-shopping"></i><i class="fa-solid fa-magnifying-glass"></i></div>
           </div>
         </div>
-        <div class="col col-6"> <img src="../assets/images/product2.png" alt="Product1"></div>
-      </div>
-    </div>
-  </section>
-  <section class="home-section"> 
-    <div class="container-xxl">       
-      <div class="row"> 
-        <div class="col col-6"> <img src="../assets/images/product3.png" alt="Product1"></div>
-        <div class="col col-6">                    
-          <div class="row">                    
-            <div class="col col-6">
-              <div class="home-section__bg bg-blue">
-                <h3>Trang sức</h3>
-              </div>
-            </div>
-            <div class="col col-6"> <img src="../assets/images/product4.png" alt="Product1"></div>
-            <div class="col col-6"> <img src="../assets/images/product5.png" alt="Product1"></div>
-            <div class="col col-6">
-              <div class="home-section__bg bg-pink product-img"><img src="../assets/images/product6.png" alt="Product6">
-                <h3>Quyến rũ hơn</h3>
-              </div>
-            </div>
-          </div>
+      </nav>
+    </header>
+    <div class="banner"> 
+      <div class="banner-content container"> 
+        <div class="banner-content__product"><img src="../assets/images/banner-product.png" alt="Product banner">
+          <h1 class="product-title">Green vera</h1>
+          <div class="product-sub-title">Sản phẩm tinh dầu dưỡng da mới nhất của Mandala </div>
+          <div class="product-sub-price">Giá chỉ  750.000đ</div><a class="product-link" href="#">Mua hàng</a>
         </div>
       </div>
     </div>
-  </section>
-  <section class="home-review"> 
-    <div class="container-xxl home-review__wapper">     
-      <div class="avatar"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-      <div class="home-review__content">           
-        <div class="home-review__content-description">"Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto  ”</div>
-        <div class="author">   <span>TutiLe</span><span>_ Giám đốc phát triển sản phẩm</span></div>
-      </div>
+    <div class="container banner-bottom">
+      <ul class="row">   
+        <li class="col col-4"> <i class="fa-solid fa-plane"></i>
+          <p>Miễn phí vận chuyển             </p>
+        </li>
+        <li class="col col-4"> <i class="fa-solid fa-gift"></i>
+          <p>Nhận ngay quà trị giá 350.000đ</p>
+        </li>
+        <li class="col col-4"> <i class="fa-solid fa-star"></i>
+          <p>Giảm 30% cho đơn hàng trên 5.000.000đ</p>
+        </li>
+      </ul>
     </div>
-  </section>
+    <section class="home-section"> 
+      <div class="container">       
+        <div class="row">   
+          <div class="col col-6">                    
+            <div class="row"> 
+              <div class="col col-6"> <img src="../assets/images/product1.png" alt="Product1"></div>
+              <div class="col col-6">
+                <div class="home-section__bg bg-yellow">
+                  <h3>Sữa tắm</h3>
+                </div>
+              </div>
+              <div class="col col-6">
+                <div class="home-section__bg bg-grey">
+                  <h3>Nước hoa</h3>
+                </div>
+              </div>
+              <div class="col col-6"> <img src="../assets/images/product1.png" alt="Product1"></div>
+            </div>
+          </div>
+          <div class="col col-6"> <img src="../assets/images/product2.png" alt="Product1"></div>
+        </div>
+      </div>
+    </section>
+    <section class="home-section"> 
+      <div class="container">       
+        <div class="row"> 
+          <div class="col col-6"> <img src="../assets/images/product3.png" alt="Product1"></div>
+          <div class="col col-6">                    
+            <div class="row">                    
+              <div class="col col-6">
+                <div class="home-section__bg bg-blue">
+                  <h3>Trang sức</h3>
+                </div>
+              </div>
+              <div class="col col-6"> <img src="../assets/images/product4.png" alt="Product1"></div>
+              <div class="col col-6"> <img src="../assets/images/product5.png" alt="Product1"></div>
+              <div class="col col-6">
+                <div class="home-section__bg bg-pink product-img"><img src="../assets/images/product6.png" alt="Product6">
+                  <h3>Quyến rũ hơn</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-review"> 
+      <div class="container home-review__wapper">     
+        <div class="avatar"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+        <div class="home-review__content">           
+          <div class="home-review__content-description">"Vẫn là vẻ bề ngoài vô cùng đơn giản với các tông màu trắng, hồng làm chủ đạo nhưng lại tạo ra sức hút kỳ lạ với những ai cầm trên tay sản phẩm ấy! Với công nghệ cải tiến mới nhất, hãng Rohto  ”</div>
+          <div class="author">   <span>TutiLe</span><span>_ Giám đốc phát triển sản phẩm</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="home-product"> 
+      <div class="background-image"></div>
+      <div class="container">
+        <div class="section-title">
+          <h1 class="slash_underline">Sản phẩm mới</h1>
+          <h1 class="active">Sản phẩm bán chạy 
+            <div class="divider-custom divider-light">
+              <div class="divider-custom-line"></div>
+              <div class="divider-custom-icon">//////////////                   </div>
+              <div class="divider-custom-line"></div>
+            </div>
+          </h1>
+          <h1>Sản phẩm đặc biệt</h1>
+        </div>
+        <div class="section-category"> 
+          <ul> 
+            <li>Mỹ phẩm </li>
+            <li>Chăm sóc da</li>
+            <li>Dành cho tóc</li>
+            <li class="active">Nước hoa </li>
+            <li>Trang sức</li>
+            <li>Quà tặng</li>
+          </ul>
+        </div>
+        <div class="product-list">
+          <ul class="product-list__slider"> 
+            <li class="product-item"> 
+              <div class="product-item__img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+              <div class="product-item__brand">Brand</div>
+              <div class="product-item__price">Brand</div>
+              <div class="product-item__controller">
+                <button class="btn"> Mua hàng</button>
+                <button class="btn"> <i class="fa-solid fa-heart">                          </i></button>
+                <button class="btn"> <i class="fa-solid fa-arrows-rotate"></i></button>
+              </div>
+            </li>
+            <li class="product-item"> 
+              <div class="product-item__img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+              <div class="product-item__brand">Brand</div>
+              <div class="product-item__price">Brand</div>
+              <div class="product-item__controller">
+                <button class="btn"> Mua hàng</button>
+                <button class="btn"> <i class="fa-solid fa-heart">                          </i></button>
+                <button class="btn"> <i class="fa-solid fa-arrows-rotate"></i></button>
+              </div>
+            </li>
+            <li class="product-item"> 
+              <div class="product-item__img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+              <div class="product-item__brand">Brand</div>
+              <div class="product-item__price">Brand</div>
+              <div class="product-item__controller">
+                <button class="btn"> Mua hàng</button>
+                <button class="btn"> <i class="fa-solid fa-heart">                          </i></button>
+                <button class="btn"> <i class="fa-solid fa-arrows-rotate"></i></button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="home-social"> 
+      <ul> 
+        <li class="active"> 
+          <div class="home-social__icon"> <i class="fa-brands fa-facebook"></i>facebook</div>
+        </li>
+        <li> 
+          <div class="home-social__icon"> <i class="fa-brands fa-twitter"></i>twitter</div>
+        </li>
+        <li> 
+          <div class="home-social__icon"> <i class="fa-brands fa-instagram"></i>instagram</div>
+        </li>
+        <li> 
+          <div class="home-social__icon"> <i class="fa-brands fa-google"></i>google</div>
+        </li>
+        <li> 
+          <div class="home-social__icon"> <i class="fa-brands fa-pinterest"></i>pinterest   </div>
+        </li>
+        <li> 
+          <div class="home-social__icon"> <i class="fa-brands fa-linkedin"></i>linkedin          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="home-blog"> 
+      <div class="container"> 
+        <div class="row"> 
+          <div class="col col-4"> 
+            <h2>Về chúng tôi
+              <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">///////////////////                   </div>
+                <div class="divider-custom-line"></div>
+              </div>
+            </h2>
+            <div class="description"> 
+              <h4>Giới thiệu chung về mỹ phẩm handmade Mandala</h4>
+              <p>Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.</p><span>Xem thêm</span>
+            </div>
+          </div>
+          <div class="col col-4"> 
+            <h2>Blog
+              <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">///////////////////                    </div>
+                <div class="divider-custom-line"></div>
+              </div>
+            </h2>
+            <div class="description"> 
+              <div class="blog-description-img"><img src="../assets/images/blog2.jpg" alt="blog2"></div>
+              <h4>Review son kem</h4>
+              <p class="separate">Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. </p>
+              <p class="blog-author border-bottom">Bởi namtran(12/12/2021) </p>
+              <div class="d-flex justify-content-between">   <span>Đọc thêm > </span><span>23 Bình luận</span></div>
+            </div>
+          </div>
+          <div class="col col-4"> 
+            <h2>Gửi email cho chúng tôi
+              <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">///////////////////                    </div>
+                <div class="divider-custom-line"></div>
+              </div>
+            </h2>
+            <form class="blog-home__form">
+              <h3>Gửi email</h3><span>Để nhận những ưu đãi mới nhất </span>
+              <input type="text" placeholder="Họ tên*">
+              <input type="text" placeholder="Số điện thoại*">
+              <input type="email" placeholder="Email*">
+              <button class="btn btn-success text-uppercase">   <i class="fa-solid fa-paper-plane"></i>Gửi email</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="text-center text-lg-start text-muted"> 
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row-->
+          <div class="row mt-3">
+            <!-- Grid column-->
+            <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+              <!-- Content-->
+              <h6 class="text-uppercase fw-bold mb-4">Liên hệ với chúng tôi</h6>
+              <p><i class="fa-solid fa-location-dot me-3"></i>Tầng 4, Tòa nhà Hanoi Group  Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội </p>
+              <p><i class="fa-solid fa-phone me-3"></i>0869046822   <i class="fa-solid fa-phone me-3"></i>0869046822</p>
+              <p><i class="fa-solid fa-phone me-3"></i>0869046822</p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links-->
+              <h6 class="text-uppercase fw-bold mb-4">Chuyển hàng</h6>
+              <p><a class="text-reset" href="#!">Mua sắm trực tuyến</a></p>
+              <p><a class="text-reset" href="#!">Đến từ chúng tôi</a></p>
+              <p><a class="text-reset" href="#!">Chính sách vận chuyển</a></p>
+              <p><a class="text-reset" href="#!">Thông tin vận chuyển</a></p>
+            </div>
+            <!-- Grid column-->
+            <!-- Grid column-->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links-->
+              <h6 class="text-uppercase fw-bold mb-4">Hỗ trợ</h6>
+              <p><a class="text-reset" href="#!">Câu chuyện của chúng ta</a></p>
+              <p><a class="text-reset" href="#!">Thanh toán an toàn</a></p>
+              <p><a class="text-reset" href="#!">Tuỳ chọn Vận chuyển</a></p>
+              <p><a class="text-reset" href="#!">Chính sách vận chuyển</a></p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Thông tin</h6>
+              <p>Về chúng tôi            </p>
+              <p>Điều khoản & điều kiện            </p>
+              <p>Chính sách riêng tư</p>
+              <p>Đơn đặt hàng và Returns                   </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-2 mx-auto mb-md-0 mb-4">
+              <!-- Links-->
+              <h6 class="text-uppercase fw-bold mb-4">My account</h6>
+              <p>Xem giỏ hàng           </p>
+              <p>Sản phảm yêu thích          </p>
+              <p>Kiểm tra</p>
+              <p>Theo dõi đơn hàng của tôi</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Links-->
+      <!-- Copyright-->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">&copy; 2021 Copyright:<a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a></div>
+      <!-- Copyright-->
+    </footer>
+    <!-- Footer-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>

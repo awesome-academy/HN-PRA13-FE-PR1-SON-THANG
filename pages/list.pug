@@ -1,0 +1,136 @@
+extends layout.pug
+
+block content
+    section#list-product
+        .container 
+            include ./breadcrumb
+            .row 
+                .col.col-3 
+                    .list-product__sidebar  
+                        h3.list-product__sidebar-heading 
+                            i.fa-solid.fa-bars 
+                            | Danh mục sản phẩm
+                            i.fa-solid.fa-border-all
+                            i.fa-solid.fa-list
+                        .sidebar-category 
+                            .sidebar-category-heading 
+                                h4 Mỹ phẩm 
+                                i.fa-solid.fa-caret-down
+                            ul.sidebar-category-list 
+                                li Vòng tay 
+                                li Nhẫn 
+                                li Vòng tay 
+                                li Nhẫn 
+                                li Vòng tay 
+                                li Nhẫn 
+                        .sidebar-category 
+                            .sidebar-category-heading 
+                                h4 Mỹ phẩm 
+                                i.fa-solid.fa-caret-down
+                    .compare-product
+                        h3 So sánh sảnh phẩm
+                        p Bạn chưa có sản phẩm để so sánh
+                    .tag-product   
+                        ul.tag-product__list 
+                            each val in ["Đồng hồ", "Túi", "Phụ kiện", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Trẻ em", "Thời trang nữ" ]
+                                li.tag-product__item 
+                                    button.btn.btn-dark= val    
+                .col.col-9 
+                    .list-product__content
+                        .list-product__content-top 
+                        ul.list-product__content
+                            li.product__content-item
+                                .row 
+                                    .col.col-4 
+                                        .product__content-item__img 
+                                            img(src="../assets/images/banner-product.png" alt="Product banner")
+                                    .col.col-8
+                                        .product__content-item__attribute 
+                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            .start 
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                span (4 lượt mua)  
+                                            .description 
+                                                | Tự hào được ghi là năm mà Tiffany & Co là
+                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                | đường cong và đường nét mượt mà.
+                                            .price 350.000đ
+                                            .controler 
+                                                button.btn.btn-light Mua hàng    
+                                                button.btn.btn-success 
+                                                    i.fa-solid.fa-heart
+                                                button.btn.btn-light
+                                                    i.fa-solid.fa-arrows-rotate
+                            li.product__content-item
+                                .row 
+                                    .col.col-4 
+                                        .product__content-item__img 
+                                            img(src="../assets/images/banner-product.png" alt="Product banner")
+                                    .col.col-8
+                                        .product__content-item__attribute 
+                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            .start 
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                span (4 lượt mua)  
+                                            .description 
+                                                | Tự hào được ghi là năm mà Tiffany & Co là
+                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                | đường cong và đường nét mượt mà.
+                                            .price 350.000đ
+                                            .controler 
+                                                button.btn.btn-light Mua hàng    
+                                                button.btn.btn-success 
+                                                    i.fa-solid.fa-heart
+                                                button.btn.btn-light
+                                                    i.fa-solid.fa-arrows-rotate
+                            li.product__content-item
+                                .row 
+                                    .col.col-4 
+                                        .product__content-item__img 
+                                            img(src="../assets/images/banner-product.png" alt="Product banner")
+                                    .col.col-8
+                                        .product__content-item__attribute 
+                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            .start 
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                i.fa-solid.fa-heart
+                                                span (4 lượt mua)  
+                                            .description 
+                                                | Tự hào được ghi là năm mà Tiffany & Co là
+                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                | đường cong và đường nét mượt mà.
+                                            .price 350.000đ
+                                            .controler 
+                                                button.btn.btn-light Mua hàng    
+                                                button.btn.btn-success 
+                                                    i.fa-solid.fa-heart
+                                                button.btn.btn-light
+                                                    i.fa-solid.fa-arrows-rotate                            
+                        nav(aria-label='...')
+                            ul.pagination
+                                li.page-item.disabled
+                                a.page-link(href='#' tabindex='-1') Previous
+                                li.page-item
+                                a.page-link(href='#') 1
+                                li.page-item.active
+                                a.page-link(href='#')
+                                    | 2 
+                                    span.sr-only (current)
+                                li.page-item
+                                a.page-link(href='#') 3
+                                li.page-item
+                                a.page-link(href='#') Next

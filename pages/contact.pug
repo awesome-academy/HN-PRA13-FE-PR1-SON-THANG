@@ -1,0 +1,25 @@
+extends layout.pug
+
+block content
+    #contact
+    .container 
+        include ./breadcrumb
+        .row 
+            .col.col-6 Google map
+            .col.col-6 
+                h2.text-uppercase Gửi email cho chúng tôi
+                form
+                    .row.mb-3
+                        label.col-sm-2.col-form-label Tên*
+                        .col-sm-10
+                            input.form-control(type='text')
+                    .row.mb-3
+                        label.col-sm-2.col-form-label Email*
+                        .col-sm-10
+                            input.form-control(type='email')                             
+                    .row.mb-3
+                        label.col-sm-2.col-form-label Ý kiến*
+                        .col-sm-10
+                            textarea.form-control( style='height: 100px')                            
+                    button.btn.btn-dark(type='button') Gửi ý kiến
+                

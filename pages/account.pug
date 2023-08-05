@@ -1,0 +1,52 @@
+extends layout.pug
+
+block content
+    section#account
+        .container 
+            include ./breadcrumb
+            .row 
+                .col.col-9 
+                    h1.text-uppercase Tài khoản 
+                    table.table.account-table
+                        thead
+                            tr
+                                th.text-uppercase(scope='col') Order
+                                th.text-uppercase(scope='col') Date
+                                th.text-uppercase(scope='col') Tình trạng thanh toán
+                                th.text-uppercase(scope='col') Tổng
+                                th.text-uppercase(scope='col') Nợ
+                        tbody
+                            tr
+                                th(scope='row') #1006
+                                td May 13, 2023
+                                td Đã thanh toán
+                                td 350.000đ
+                                td 0
+                            tr
+                                th(scope='row') #1006
+                                td May 13, 2023
+                                td Đã thanh toán
+                                td 350.000đ
+                                td 0
+                            tr
+                                th(scope='row') #1006
+                                td May 13, 2023
+                                td Đã thanh toán
+                                td 350.000đ
+                                td 0
+                .col.col-3 
+                    .account-description 
+                        h3.text-uppercase Chi tiết tài khoản
+                        .account-description__item 
+                            .account__icon
+                                i.fa-solid.fa-user
+                            | GiangLe
+                            | Legiang@gmail.com 
+                        .account-description__item 
+                            .account__icon
+                                i.fa-solid.fa-location-dot
+                            | Tòa nhà Hà Nội group 442 Đội Cấn, Ba Đình Hà Nội  
+                        .account-description__item 
+                            .account__icon
+                                i.fa-solid.fa-phone
+                            | (+84) 869 046 822
