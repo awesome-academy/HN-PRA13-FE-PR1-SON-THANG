@@ -1,0 +1,177 @@
+extends layout.pug
+include mixins.pug
+block content
+    .container 
+        +breadcrumbs(["Home", "Sản phẩm", "Trang sức", "Lắc tay"])
+    section#detail
+        .container 
+            .product-detail 
+                .row.product-detail-main-content
+                    .col.col-3.col-xl-1                         
+                        ul.product-detail-current-list__img
+                            li.product-detail-icon                                 
+                                i.fa-solid.fa-arrow-up
+                            li
+                                img(src="../assets/images/product13-1.jpg" alt="product9")
+                            li
+                                img(src="../assets/images/product13-2.jpg" alt="product13-2")
+                            li
+                                img(src="../assets/images/product13-3.jpg" alt="product13-2")
+                            li
+                                img(src="../assets/images/product13-4.jpg" alt="product13-2")
+                            li.product-detail-icon                                 
+                                i.fa-solid.fa-arrow-down
+                    .col.col-9.col-xl-6        
+                        .product-detail-current__img
+                            img(src="../assets/images/product13.jpg" alt="product13")
+                    
+                    .col.col-12.col-xl-5.product-detail__content
+                        h2.product-name.text-uppercase Lắc taY TYFFANY XU HƯỚNG MỚI NHẤT
+                        span.text-uppercase TYFFANY MS 3201
+                            br
+                        span.price 955.000đ 
+                        span.sub-price 999.000đ 
+                        p.description Không thể phủ nhận, thời trang và phong cách chính là “tuyên ngôn” không lời mạnh mẽ nhất của mỗi người phụ nữ. Do đó, việc mua sắm thời trang trở thành niềm vui, và có khi là nguồn cảm hứng vô tận để phái đẹp sống vui, sống đẹp hơn trong mắt nửa còn lại của thế giới. Để F5 tủ đồ của mình trước những xu hướng ngày một đa dạng hơn trong thế giới thời trang, nhiều chị em không ngần ngại chi tiêu “mạnh tay” để sở hữu những món đồ yêu thích.
+                        .product-attribuite
+                            .product-attribuite-item
+                                h3.text-uppercase Màu sắc
+                                select.form-select(aria-label='Default select example')
+                                    option(selected='') Trắng 
+                                    option(value='1') Đỏ
+                                    option(value='2') Vàng
+                                    option(value='3') Nâu
+                            .product-attribuite-item
+                                h3.text-uppercase Size
+                                input.form-control(type='text' placeholder='M')
+
+                            .product-attribuite-item
+                                h3.text-uppercase Số lượng
+                                input.form-control(type='number' placeholder='1')
+
+                            .product-attribuite-item   
+                                .controler 
+                                    button.btn.btn-light.text-uppercase Mua hàng    
+                                    button.btn.btn-success 
+                                        i.fa-solid.fa-heart
+                                    button.btn.btn-light
+                                        i.fa-solid.fa-arrows-rotate
+                            .product-attribuite-item  
+                                .product-social Ship & return
+                                    img(src="../assets/images/detail-social.jpg" alt="detail-social")
+                .row.product-detail-sub-content    
+                    .col.col-12.col-xl-9
+                        .product-description 
+                            .product-description-title.border-bottom
+                                h3.active Đặc điểm nổi bật 
+                                h3 Thông tin sản phẩm
+                                h3 Đánh giá
+                            ul.product-description-list 
+
+                                li.product-description-item 
+                                    .row 
+                                        .col.col-7
+                                            .product-description-item-content
+                                                h4.text-uppercase The mark of a legend
+                                                p Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
+                                        .col.col-5
+                                            .product-description-item-img 
+                                                img(src="../assets/images/product13-5.jpg" alt="avatar1")                              
+                                li.product-description-item 
+                                    .row 
+                                        .col.col-5
+                                            .product-description-item-img 
+                                                img(src="../assets/images/product13-5.jpg" alt="avatar1")         
+                                        .col.col-7
+                                            .product-description-item-content
+                                                h4.text-uppercase The mark of a legend
+                                                p Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
+                                li.product-description-item 
+                                    .row 
+                                        .col.col-7
+                                            .product-description-item-content
+                                                h4.text-uppercase The mark of a legend
+                                                p Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
+                                        .col.col-5
+                                            .product-description-item-img 
+                                                img(src="../assets/images/product13-5.jpg" alt="avatar1")         
+                    .col.col-12.col-xl-3
+                        section.related-product
+                            .related-product-item-container
+                                h2.heading.text-uppercase Sản phẩm bán chạy 
+                                ul.related-product-list     
+                                    li.related-product-item
+                                        .row 
+                                            .col.col-4
+                                                .related-product__img
+                                                    img(src="../assets/images/product13-1.jpg" alt="avatar1")
+                                            .col.col-8        
+                                                .related-product__content 
+                                                    h4.product-name My pham chau au 
+                                                    .star
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        span (4 lượt mua)  
+                                                    .product-price 350.000
+                                    li.related-product-item
+                                        .row 
+                                            .col.col-4
+                                                .related-product__img
+                                                    img(src="../assets/images/product13-1.jpg" alt="avatar1")
+                                            .col.col-8        
+                                                .related-product__content 
+                                                    h4.product-name My pham chau au 
+                                                    .star
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        span (4 lượt mua)  
+                                                    .product-price 350.000đ        
+                            .related-product-item-container
+                                h2.heading.text-uppercase Sản phẩm mua nhiều
+                                ul.related-product-list     
+                                    li.related-product-item
+                                        .row 
+                                            .col.col-4
+                                                .related-product__img
+                                                    img(src="../assets/images/product13-1.jpg" alt="avatar1")
+                                            .col.col-8        
+                                                .related-product__content 
+                                                    h4.product-name My pham chau au 
+                                                    .star
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        span (4 lượt mua)  
+                                                    .product-price 350.000
+                                    li.related-product-item
+                                        .row 
+                                            .col.col-4
+                                                .related-product__img
+                                                    img(src="../assets/images/product13-1.jpg" alt="avatar1")
+                                            .col.col-8        
+                                                .related-product__content 
+                                                    h4.product-name My pham chau au 
+                                                    .star
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        i.fa-solid.fa-heart
+                                                        span (4 lượt mua)  
+                                                    .product-price 350.000đ                                          

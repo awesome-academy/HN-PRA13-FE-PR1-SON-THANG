@@ -1,0 +1,111 @@
+@import "../node_modules/normalize-scss/sass/normalize";
+//Boostrap
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// @import "../node_modules/font-awesome/scss/font-awesome.scss";
+
+//components
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/button.scss";
+@import "./components/newsletter-popup.scss";
+//pages
+@import "./login.scss";
+@import "./detail.scss";
+@import "./home.scss";
+@import "./blog-detail.scss";
+@import "./contact.scss";
+@import "./account.scss";
+@import "./list.scss";
+ul {
+  list-style: none;
+  padding: 0;
+}
+li.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.breadcrumb {
+  a {
+    color: #789629;
+  }
+}
+:root {
+  --text-color: #1a1a1a;
+  --header-height: 80px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+  font-family: "Open Sans", sans-serif;
+}
+.logo {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    background-color: #789629;
+    top: 10px;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}
+.trapezoid {
+  position: relative;
+  --height: 20px;
+  &.small {
+    --height: 10px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: var(--height) solid #fff;
+    border-right: var(--height) solid transparent;
+    height: 0;
+    width: 50%;
+    left: 0;
+    bottom: 0;
+  }
+  &::after {
+    content: "";
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-bottom: var(--height) solid #fff;
+    border-left: var(--height) solid transparent;
+    height: 0;
+    width: 50%;
+  }
+}
+// Divider
+.divider-custom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  &.divider-light {
+    .divider-custom-line {
+      background-color: #000;
+      width: 100%;
+      max-width: 7rem;
+      height: 1px;
+      background-color: #ececec;
+      border-radius: 1rem;
+    }
+    .divider-custom-icon {
+      padding: 10px;
+      color: #757575;
+      font-size: 12px;
+    }
+    &:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

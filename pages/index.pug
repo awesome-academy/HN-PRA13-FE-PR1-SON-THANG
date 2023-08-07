@@ -1,0 +1,78 @@
+extends layout.pug
+block content  
+    section#home
+        //- include ./components/newsletter-popup.pug
+        include ./components/home/banner.pug
+        include ./components/home/home-product.pug
+        section.home-social 
+            ul 
+                li.active 
+                    .home-social__icon 
+                        i.fa-brands.fa-facebook
+                        | facebook
+                li 
+                    .home-social__icon 
+                        i.fa-brands.fa-twitter
+                        | twitter
+                li 
+                    .home-social__icon 
+                        i.fa-brands.fa-instagram
+                        | instagram
+                li 
+                    .home-social__icon 
+                        i.fa-brands.fa-google
+                        | google
+                li 
+                    .home-social__icon 
+                        i.fa-brands.fa-pinterest
+                        | pinterest   
+                li 
+                    .home-social__icon 
+                        i.fa-brands.fa-linkedin
+                        | linkedin                
+        section.home-blog 
+            .container 
+                .row 
+                    
+                    .col.col-12.col-md-6.col-xl-4
+                        h2 Về chúng tôi
+                            .divider-custom.divider-light
+                                .divider-custom-line
+                                .divider-custom-icon ///////////////////                   
+                                .divider-custom-line
+                        .description 
+                            //- .logo Mandana
+                            h4 Giới thiệu chung về mỹ phẩm handmade Mandala
+                            p Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt.
+                            span Xem thêm
+                    .col.col-12.col-md-6.col-xl-4
+                        h2 Blog
+                            .divider-custom.divider-light
+                                .divider-custom-line
+                                .divider-custom-icon ///////////////////                    
+                                .divider-custom-line
+                        .description 
+                            .blog-description-img
+                                img(src="../assets/images/blog2.jpg" alt="blog2")
+                            h4 Review son kem
+                            p.separate Hi, chào các nàng ... sau khá nhiều lời hứa hão thì hôm nay tớ quay lại hâm nóng cái Blog này vào một ngày đầu hè nóng oi bức, khi mà dân tình xô nhau đi tắm Free để giải nhiệt. 
+                            p.blog-author.border-bottom Bởi namtran(12/12/2021) 
+
+                            .d-flex.justify-content-between    
+                                span Đọc thêm > 
+                                span 23 Bình luận
+                    .col.col-12.col-md-6.col-xl-4
+                        h2 Gửi email cho chúng tôi
+                            .divider-custom.divider-light
+                                .divider-custom-line
+                                .divider-custom-icon ///////////////////                    
+                                .divider-custom-line
+                        form.blog-home__form
+                            h3 Gửi email
+                            span Để nhận những ưu đãi mới nhất 
+                            input(type="text" placeholder="Họ tên*")
+                            input(type="text" placeholder="Số điện thoại*")
+                            input(type="email" placeholder="Email*")
+                            button.btn.btn-success.text-uppercase    
+                                i.fa-solid.fa-paper-plane
+                                | Gửi email
