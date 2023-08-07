@@ -1,0 +1,31 @@
+section#account {
+  margin-top: 26px;
+  margin-bottom: 90px;
+  h2 {
+    line-height: 40px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  h3 {
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .account-description__item {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 16px;
+    margin: 10px 0;
+    .account__icon {
+      margin-right: 8px;
+    }
+  }
+  .table {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .table > :not(caption) > * > * {
+    padding: 1rem 0.5rem;
+  }
+}

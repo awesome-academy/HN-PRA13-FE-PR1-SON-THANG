@@ -1,17 +1,18 @@
 extends layout.pug
-
-block content
+include mixins.pug
+block content  
+    .container
+        +breadcrumbs(["Home", "Tài khoản"])
     section#account
-        .container 
-            include ./breadcrumb
+        .container          
             .row 
                 .col.col-9 
-                    h1.text-uppercase Tài khoản 
+                    h2.text-uppercase Tài khoản 
                     table.table.account-table
-                        thead
+                        thead.thead-light
                             tr
-                                th.text-uppercase(scope='col') Order
-                                th.text-uppercase(scope='col') Date
+                                th(scope='col') Order
+                                th(scope='col') Date
                                 th.text-uppercase(scope='col') Tình trạng thanh toán
                                 th.text-uppercase(scope='col') Tổng
                                 th.text-uppercase(scope='col') Nợ
@@ -19,21 +20,27 @@ block content
                             tr
                                 th(scope='row') #1006
                                 td May 13, 2023
-                                td Đã thanh toán
+                                td.text-danger Đã thanh toán
                                 td 350.000đ
                                 td 0
                             tr
                                 th(scope='row') #1006
                                 td May 13, 2023
-                                td Đã thanh toán
+                                td.text-danger Đã thanh toán
                                 td 350.000đ
                                 td 0
                             tr
                                 th(scope='row') #1006
                                 td May 13, 2023
-                                td Đã thanh toán
+                                td.text-danger Đã thanh toán
                                 td 350.000đ
                                 td 0
+                            tr
+                                th(scope='row') #1006
+                                td May 13, 2023
+                                td.text-danger Đã thanh toán
+                                td 350.000đ
+                                td 275.000đ
                 .col.col-3 
                     .account-description 
                         h3.text-uppercase Chi tiết tài khoản

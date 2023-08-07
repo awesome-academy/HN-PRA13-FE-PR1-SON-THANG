@@ -1,8 +1,8 @@
 extends layout.pug
-
+include mixins.pug
 block content  
     .container
-        include ./breadcrumb
+        +breadcrumbs(["Home", "Đăng nhập"])
         .login-top 
             h1 Đăng nhập 
             button.btn.btn-dark.text-uppercase(type='submit') Đăng ký

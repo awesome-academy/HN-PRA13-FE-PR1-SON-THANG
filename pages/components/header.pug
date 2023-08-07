@@ -1,11 +1,12 @@
 header#header 
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light.text-uppercase.fixed-top.shadow-sm
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top.shadow-sm
         .container
-            a.navbar-brand(href='/') Mandana
+            a.navbar-brand.logo(href='/') 
+                img(src="../assets/images/logo.png" alt="Logo")
             button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
                 span.navbar-toggler-icon
             #navbarSupportedContent.collapse.navbar-collapse
-                ul.navbar-nav.mr-auto.justify-content-center(style="flex:1;")
+                ul.navbar-nav.mr-auto.text-uppercase.justify-content-center(style="flex:1;")
                     li.nav-item.active
                         a.nav-link(href='/')
                             | Trang chủ 

@@ -14,11 +14,11 @@
   </head>
   <body> 
     <header id="header"> 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase fixed-top shadow-sm">
-        <div class="container"><a class="navbar-brand" href="/">Mandana</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container"><a class="navbar-brand logo" href="/"> <img src="../assets/images/logo.png" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-center" style="flex:1;">
+            <ul class="navbar-nav mr-auto text-uppercase justify-content-center" style="flex:1;">
               <li class="nav-item active"><a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="./blog-detail.html">Giới thiệu</a></li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
@@ -35,24 +35,24 @@
         </div>
       </nav>
     </header>
+    <div class="container">
+      <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
+        <ol class="breadcrumb" style="margin: 0;">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tài khoản</li>
+        </ol>
+      </nav>
+    </div>
     <section id="account">
-      <div class="container"> 
-        <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
-          <ol class="breadcrumb" style="margin: 0;">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Sản phẩm </a></li>
-            <li class="breadcrumb-item"><a href="#">Trang sức </a></li>
-            <li class="breadcrumb-item active" aria-current="page">Lắc tay</li>
-          </ol>
-        </nav>
+      <div class="container">         
         <div class="row"> 
           <div class="col col-9"> 
-            <h1 class="text-uppercase">Tài khoản </h1>
+            <h2 class="text-uppercase">Tài khoản </h2>
             <table class="table account-table">
-              <thead>
+              <thead class="thead-light">
                 <tr>
-                  <th class="text-uppercase" scope="col">Order</th>
-                  <th class="text-uppercase" scope="col">Date</th>
+                  <th scope="col">Order</th>
+                  <th scope="col">Date</th>
                   <th class="text-uppercase" scope="col">Tình trạng thanh toán</th>
                   <th class="text-uppercase" scope="col">Tổng</th>
                   <th class="text-uppercase" scope="col">Nợ</th>
@@ -62,23 +62,30 @@
                 <tr>
                   <th scope="row">#1006</th>
                   <td>May 13, 2023</td>
-                  <td>Đã thanh toán</td>
+                  <td class="text-danger">Đã thanh toán</td>
                   <td>350.000đ</td>
                   <td>0</td>
                 </tr>
                 <tr>
                   <th scope="row">#1006</th>
                   <td>May 13, 2023</td>
-                  <td>Đã thanh toán</td>
+                  <td class="text-danger">Đã thanh toán</td>
                   <td>350.000đ</td>
                   <td>0</td>
                 </tr>
                 <tr>
                   <th scope="row">#1006</th>
                   <td>May 13, 2023</td>
-                  <td>Đã thanh toán</td>
+                  <td class="text-danger">Đã thanh toán</td>
                   <td>350.000đ</td>
                   <td>0</td>
+                </tr>
+                <tr>
+                  <th scope="row">#1006</th>
+                  <td>May 13, 2023</td>
+                  <td class="text-danger">Đã thanh toán</td>
+                  <td>350.000đ</td>
+                  <td>275.000đ</td>
                 </tr>
               </tbody>
             </table>

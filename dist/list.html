@@ -14,11 +14,11 @@
   </head>
   <body> 
     <header id="header"> 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase fixed-top shadow-sm">
-        <div class="container"><a class="navbar-brand" href="/">Mandana</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container"><a class="navbar-brand logo" href="/"> <img src="../assets/images/logo.png" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-center" style="flex:1;">
+            <ul class="navbar-nav mr-auto text-uppercase justify-content-center" style="flex:1;">
               <li class="nav-item active"><a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="./blog-detail.html">Giới thiệu</a></li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
@@ -35,31 +35,32 @@
         </div>
       </nav>
     </header>
+    <div class="container">
+      <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
+        <ol class="breadcrumb" style="margin: 0;">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Trang sức</li>
+        </ol>
+      </nav>
+    </div>
     <section id="list-product">
-      <div class="container"> 
-        <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
-          <ol class="breadcrumb" style="margin: 0;">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Sản phẩm </a></li>
-            <li class="breadcrumb-item"><a href="#">Trang sức </a></li>
-            <li class="breadcrumb-item active" aria-current="page">Lắc tay</li>
-          </ol>
-        </nav>
+      <div class="list-product__banner w-100"><img class="w-100" src="../assets/images/list-bg.jpg" alt="List bg"></div>
+      <div class="container">           
         <div class="row"> 
-          <div class="col col-3"> 
+          <div class="col col-12 col-xl-3">
             <div class="list-product__sidebar"> 
-              <h3 class="list-product__sidebar-heading"> <i class="fa-solid fa-bars"> </i>Danh mục sản phẩm<i class="fa-solid fa-border-all"></i><i class="fa-solid fa-list"></i></h3>
+              <h3 class="list-product__sidebar-heading text-uppercase border-bottom"><i class="fa-solid fa-bars"> </i>Danh mục sản phẩm                            </h3>
               <div class="sidebar-category"> 
-                <div class="sidebar-category-heading"> 
+                <div class="sidebar-category-heading active">
                   <h4>Mỹ phẩm </h4><i class="fa-solid fa-caret-down"></i>
                 </div>
                 <ul class="sidebar-category-list"> 
-                  <li>Vòng tay </li>
-                  <li>Nhẫn </li>
-                  <li>Vòng tay </li>
-                  <li>Nhẫn </li>
-                  <li>Vòng tay </li>
-                  <li>Nhẫn </li>
+                  <li> <a href="#">Vòng tay </a></li>
+                  <li> <a href="#">Nhẫn </a></li>
+                  <li> <a href="#">Vòng tay </a></li>
+                  <li> <a href="#">Nhẫn </a></li>
+                  <li> <a href="#">Vòng tay </a></li>
+                  <li> <a href="#">Nhẫn </a></li>
                 </ul>
               </div>
               <div class="sidebar-category"> 
@@ -69,59 +70,78 @@
               </div>
             </div>
             <div class="compare-product">
-              <h3>So sánh sảnh phẩm</h3>
+              <h3 class="border-bottom">So sánh sảnh phẩm</h3>
               <p>Bạn chưa có sản phẩm để so sánh</p>
             </div>
-            <div class="tag-product">  
+            <div class="tag-product"> 
+              <h3 class="border-bottom">Tag sản phẩm </h3>
               <ul class="tag-product__list"> 
                 <li class="tag-product__item"> 
                   <button class="btn btn-dark">Đồng hồ</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Túi</button>
+                  <button class="btn btn-light">Túi</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Phụ kiện</button>
+                  <button class="btn btn-light">Phụ kiện</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Giày</button>
+                  <button class="btn btn-light">Giày</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Sandal</button>
+                  <button class="btn btn-light">Sandal</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Áo sơ mi</button>
+                  <button class="btn btn-light">Áo sơ mi</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Nước hoa</button>
+                  <button class="btn btn-light">Nước hoa</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Trẻ em</button>
+                  <button class="btn btn-light">Trẻ em</button>
                 </li>
                 <li class="tag-product__item"> 
-                  <button class="btn btn-dark">Thời trang nữ</button>
+                  <button class="btn btn-light">Thời trang nữ</button>
                 </li>
               </ul>
             </div>
+            <div class="list-product-sidebar__img"> 
+              <h2 class="text-uppercase">Mandala<br>Store</h2>
+            </div>
           </div>
-          <div class="col col-9"> 
+          <div class="col col-12 col-xl-9">   
             <div class="list-product__content">
-              <div class="list-product__content-top"> </div>
-              <ul class="list-product__content">
-                <li class="product__content-item">
+              <div class="list-product__content-controller border-bottom">
+                <div class="list-product__content-controller__left-icon"><i class="fa-solid fa-border-all"></i><i class="fa-solid fa-list"></i></div>
+                <div class="list-product__content-controller__navigation">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"> <i class="fa-solid fa-caret-left"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2 <span class="sr-only">(current)</span></a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item active"><a class="page-link" href="#"> <i class="fa-solid fa-caret-right"></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <ul class="list-product__content-main">
+                <li class="product__content-item border-bottom">
                   <div class="row"> 
                     <div class="col col-4"> 
-                      <div class="product__content-item__img"> <img src="../assets/images/banner-product.png" alt="Product banner"></div>
+                      <div class="product__content-item__img"> <img src="../assets/images/product7.jpg" alt="product7"></div>
                     </div>
                     <div class="col col-8">
-                      <div class="product__content-item__attribute"> 
-                        <h3 class="title">Mỹ phẩm hàng đầu thế giới</h3>
+                      <div class="product__content-item__attribute"> <a href="./detail.html">
+                          <h3 class="title">Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới </h3></a>
                         <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                        <div class="description">
-                           Tự hào được ghi là năm mà Tiffany & Co là
-                          thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                          qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                          đường cong và đường nét mượt mà.
+                        <div class="description"> 
+                          <p>
+                             Tự hào được ghi là năm mà Tiffany & Co là
+                            thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                            qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                            đường cong và đường nét mượt mà.
+                          </p>
                         </div>
                         <div class="price">350.000đ</div>
                         <div class="controler"> 
@@ -133,20 +153,22 @@
                     </div>
                   </div>
                 </li>
-                <li class="product__content-item">
+                <li class="product__content-item border-bottom">
                   <div class="row"> 
                     <div class="col col-4"> 
-                      <div class="product__content-item__img"> <img src="../assets/images/banner-product.png" alt="Product banner"></div>
+                      <div class="product__content-item__img"> <img src="../assets/images/product1.png" alt="Product banner"></div>
                     </div>
                     <div class="col col-8">
-                      <div class="product__content-item__attribute"> 
-                        <h3 class="title">Mỹ phẩm hàng đầu thế giới</h3>
+                      <div class="product__content-item__attribute"> <a href="./detail.html">
+                          <h3 class="title">Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới </h3></a>
                         <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                        <div class="description">
-                           Tự hào được ghi là năm mà Tiffany & Co là
-                          thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                          qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                          đường cong và đường nét mượt mà.
+                        <div class="description"> 
+                          <p>
+                             Tự hào được ghi là năm mà Tiffany & Co là
+                            thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                            qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                            đường cong và đường nét mượt mà.
+                          </p>
                         </div>
                         <div class="price">350.000đ</div>
                         <div class="controler"> 
@@ -158,41 +180,48 @@
                     </div>
                   </div>
                 </li>
-                <li class="product__content-item">
+                <li class="product__content-item border-bottom">
                   <div class="row"> 
                     <div class="col col-4"> 
                       <div class="product__content-item__img"> <img src="../assets/images/banner-product.png" alt="Product banner"></div>
                     </div>
                     <div class="col col-8">
-                      <div class="product__content-item__attribute"> 
-                        <h3 class="title">Mỹ phẩm hàng đầu thế giới</h3>
+                      <div class="product__content-item__attribute"> <a href="./detail.html">
+                          <h3 class="title">Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới </h3></a>
                         <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                        <div class="description">
-                           Tự hào được ghi là năm mà Tiffany & Co là
-                          thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                          qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                          đường cong và đường nét mượt mà.
+                        <div class="description"> 
+                          <p>
+                             Tự hào được ghi là năm mà Tiffany & Co là
+                            thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                            qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                            đường cong và đường nét mượt mà.
+                          </p>
                         </div>
                         <div class="price">350.000đ</div>
                         <div class="controler"> 
                           <button class="btn btn-light">Mua hàng    </button>
                           <button class="btn btn-success"> <i class="fa-solid fa-heart"></i></button>
-                          <button class="btn btn-light"><i class="fa-solid fa-arrows-rotate">                           </i></button>
+                          <button class="btn btn-light"><i class="fa-solid fa-arrows-rotate">                                                  </i></button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
               </ul>
-              <nav aria-label="...">
-                <ul class="pagination">
-                  <li class="page-item disabled"></li><a class="page-link" href="#" tabindex="-1">Previous</a>
-                  <li class="page-item"></li><a class="page-link" href="#">1</a>
-                  <li class="page-item active"></li><a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                  <li class="page-item"></li><a class="page-link" href="#">3</a>
-                  <li class="page-item"></li><a class="page-link" href="#">Next</a>
-                </ul>
-              </nav>
+              <div class="list-product__content-controller border-bottom">
+                <div class="list-product__content-controller__left-icon"><i class="fa-solid fa-border-all"></i><i class="fa-solid fa-list"></i></div>
+                <div class="list-product__content-controller__navigation">
+                  <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1"> <i class="fa-solid fa-caret-left"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active"><a class="page-link" href="#">2 <span class="sr-only">(current)</span></a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item active"><a class="page-link" href="#"> <i class="fa-solid fa-caret-right"></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
             </div>
           </div>
         </div>

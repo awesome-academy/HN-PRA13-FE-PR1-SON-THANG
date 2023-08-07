@@ -1,52 +1,87 @@
 extends layout.pug
-
-block content
+include mixins.pug
+block content  
+    .container
+        +breadcrumbs(["Home", "Trang sức"])
     section#list-product
-        .container 
-            include ./breadcrumb
+        .list-product__banner.w-100
+            img.w-100(src="../assets/images/list-bg.jpg" alt="List bg")
+        .container            
             .row 
-                .col.col-3 
+                .col.col-12.col-xl-3
                     .list-product__sidebar  
-                        h3.list-product__sidebar-heading 
+                        h3.list-product__sidebar-heading.text-uppercase.border-bottom
                             i.fa-solid.fa-bars 
-                            | Danh mục sản phẩm
-                            i.fa-solid.fa-border-all
-                            i.fa-solid.fa-list
+                            | Danh mục sản phẩm                            
                         .sidebar-category 
-                            .sidebar-category-heading 
+                            .sidebar-category-heading.active
                                 h4 Mỹ phẩm 
                                 i.fa-solid.fa-caret-down
                             ul.sidebar-category-list 
-                                li Vòng tay 
-                                li Nhẫn 
-                                li Vòng tay 
-                                li Nhẫn 
-                                li Vòng tay 
-                                li Nhẫn 
+                                li 
+                                    a(href="#") Vòng tay 
+                                li 
+                                    a(href="#") Nhẫn 
+                                li 
+                                    a(href="#") Vòng tay 
+                                li 
+                                    a(href="#") Nhẫn 
+                                li 
+                                    a(href="#") Vòng tay 
+                                li 
+                                    a(href="#") Nhẫn 
                         .sidebar-category 
                             .sidebar-category-heading 
                                 h4 Mỹ phẩm 
                                 i.fa-solid.fa-caret-down
                     .compare-product
-                        h3 So sánh sảnh phẩm
+                        h3.border-bottom So sánh sảnh phẩm
                         p Bạn chưa có sản phẩm để so sánh
-                    .tag-product   
+                    .tag-product  
+                        h3.border-bottom Tag sản phẩm 
                         ul.tag-product__list 
-                            each val in ["Đồng hồ", "Túi", "Phụ kiện", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Trẻ em", "Thời trang nữ" ]
+                            li.tag-product__item 
+                                    button.btn.btn-dark Đồng hồ
+                            each val in [ "Túi", "Phụ kiện", "Giày", "Sandal", "Áo sơ mi", "Nước hoa", "Trẻ em", "Thời trang nữ" ]
                                 li.tag-product__item 
-                                    button.btn.btn-dark= val    
-                .col.col-9 
+                                    button.btn.btn-light= val    
+                    .list-product-sidebar__img 
+                        h2.text-uppercase Mandala
+                            br
+                            | Store
+                .col.col-12.col-xl-9    
                     .list-product__content
-                        .list-product__content-top 
-                        ul.list-product__content
-                            li.product__content-item
+                        .list-product__content-controller.border-bottom
+                            .list-product__content-controller__left-icon
+                                i.fa-solid.fa-border-all
+                                i.fa-solid.fa-list
+                            .list-product__content-controller__navigation
+                                nav(aria-label='...')
+                                    ul.pagination
+                                        li.page-item.disabled
+                                            a.page-link(href='#' tabindex='-1') 
+                                                i.fa-solid.fa-caret-left
+                                        li.page-item
+                                            a.page-link(href='#') 1
+                                        li.page-item.active
+                                            a.page-link(href='#')
+                                                | 2 
+                                                span.sr-only (current)
+                                        li.page-item
+                                            a.page-link(href='#') 3
+                                        li.page-item.active
+                                            a.page-link(href='#') 
+                                                i.fa-solid.fa-caret-right
+                        ul.list-product__content-main
+                            li.product__content-item.border-bottom
                                 .row 
                                     .col.col-4 
                                         .product__content-item__img 
-                                            img(src="../assets/images/banner-product.png" alt="Product banner")
+                                            img(src="../assets/images/product7.jpg" alt="product7")
                                     .col.col-8
                                         .product__content-item__attribute 
-                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            a(href="./detail.html")
+                                                h3.title Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới 
                                             .start 
                                                 i.fa-solid.fa-heart
                                                 i.fa-solid.fa-heart
@@ -55,10 +90,11 @@ block content
                                                 i.fa-solid.fa-heart
                                                 span (4 lượt mua)  
                                             .description 
-                                                | Tự hào được ghi là năm mà Tiffany & Co là
-                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                                                | đường cong và đường nét mượt mà.
+                                                p  
+                                                    | Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
                                             .price 350.000đ
                                             .controler 
                                                 button.btn.btn-light Mua hàng    
@@ -66,14 +102,15 @@ block content
                                                     i.fa-solid.fa-heart
                                                 button.btn.btn-light
                                                     i.fa-solid.fa-arrows-rotate
-                            li.product__content-item
+                            li.product__content-item.border-bottom
                                 .row 
                                     .col.col-4 
                                         .product__content-item__img 
-                                            img(src="../assets/images/banner-product.png" alt="Product banner")
+                                            img(src="../assets/images/product1.png" alt="Product banner")
                                     .col.col-8
                                         .product__content-item__attribute 
-                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            a(href="./detail.html")
+                                                h3.title Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới 
                                             .start 
                                                 i.fa-solid.fa-heart
                                                 i.fa-solid.fa-heart
@@ -82,10 +119,11 @@ block content
                                                 i.fa-solid.fa-heart
                                                 span (4 lượt mua)  
                                             .description 
-                                                | Tự hào được ghi là năm mà Tiffany & Co là
-                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                                                | đường cong và đường nét mượt mà.
+                                                p  
+                                                    | Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
                                             .price 350.000đ
                                             .controler 
                                                 button.btn.btn-light Mua hàng    
@@ -93,14 +131,15 @@ block content
                                                     i.fa-solid.fa-heart
                                                 button.btn.btn-light
                                                     i.fa-solid.fa-arrows-rotate
-                            li.product__content-item
+                            li.product__content-item.border-bottom
                                 .row 
                                     .col.col-4 
                                         .product__content-item__img 
                                             img(src="../assets/images/banner-product.png" alt="Product banner")
                                     .col.col-8
                                         .product__content-item__attribute 
-                                            h3.title Mỹ phẩm hàng đầu thế giới
+                                            a(href="./detail.html")
+                                                h3.title Mỹ phẩm châu Âu thương hiệu hàng đầu thế giới 
                                             .start 
                                                 i.fa-solid.fa-heart
                                                 i.fa-solid.fa-heart
@@ -109,28 +148,36 @@ block content
                                                 i.fa-solid.fa-heart
                                                 span (4 lượt mua)  
                                             .description 
-                                                | Tự hào được ghi là năm mà Tiffany & Co là
-                                                | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
-                                                | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
-                                                | đường cong và đường nét mượt mà.
+                                                p  
+                                                    | Tự hào được ghi là năm mà Tiffany & Co là
+                                                    | thành lập, bộ sưu tập mang tính biểu tượng này cung cấp cho một cái gật đầu với
+                                                    | qua trong khi thể hiện một cảm giác hiện đại với kiểu dáng đẹp
+                                                    | đường cong và đường nét mượt mà.
                                             .price 350.000đ
                                             .controler 
                                                 button.btn.btn-light Mua hàng    
                                                 button.btn.btn-success 
                                                     i.fa-solid.fa-heart
                                                 button.btn.btn-light
-                                                    i.fa-solid.fa-arrows-rotate                            
-                        nav(aria-label='...')
-                            ul.pagination
-                                li.page-item.disabled
-                                a.page-link(href='#' tabindex='-1') Previous
-                                li.page-item
-                                a.page-link(href='#') 1
-                                li.page-item.active
-                                a.page-link(href='#')
-                                    | 2 
-                                    span.sr-only (current)
-                                li.page-item
-                                a.page-link(href='#') 3
-                                li.page-item
-                                a.page-link(href='#') Next
+                                                    i.fa-solid.fa-arrows-rotate                                                   
+                        .list-product__content-controller.border-bottom
+                            .list-product__content-controller__left-icon
+                                i.fa-solid.fa-border-all
+                                i.fa-solid.fa-list
+                            .list-product__content-controller__navigation
+                                nav(aria-label='...')
+                                    ul.pagination
+                                        li.page-item.disabled
+                                            a.page-link(href='#' tabindex='-1') 
+                                                i.fa-solid.fa-caret-left
+                                        li.page-item
+                                            a.page-link(href='#') 1
+                                        li.page-item.active
+                                            a.page-link(href='#')
+                                                | 2 
+                                                span.sr-only (current)
+                                        li.page-item
+                                            a.page-link(href='#') 3
+                                        li.page-item.active
+                                            a.page-link(href='#') 
+                                                i.fa-solid.fa-caret-right

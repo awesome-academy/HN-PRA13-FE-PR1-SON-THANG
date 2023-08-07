@@ -14,11 +14,11 @@
   </head>
   <body> 
     <header id="header"> 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase fixed-top shadow-sm">
-        <div class="container"><a class="navbar-brand" href="/">Mandana</a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container"><a class="navbar-brand logo" href="/"> <img src="../assets/images/logo.png" alt="Logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto justify-content-center" style="flex:1;">
+            <ul class="navbar-nav mr-auto text-uppercase justify-content-center" style="flex:1;">
               <li class="nav-item active"><a class="nav-link" href="/">Trang chủ <span class="sr-only">(current)</span></a></li>
               <li class="nav-item"><a class="nav-link" href="./blog-detail.html">Giới thiệu</a></li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
@@ -35,49 +35,72 @@
         </div>
       </nav>
     </header>
+    <div class="container"> 
+      <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
+        <ol class="breadcrumb" style="margin: 0;">
+          <li class="breadcrumb-item"><a href="/">Home</a></li>
+          <li class="breadcrumb-item"><a href="/">Sản phẩm</a></li>
+          <li class="breadcrumb-item"><a href="/">Trang sức</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Lắc tay</li>
+        </ol>
+      </nav>
+    </div>
     <section id="detail">
       <div class="container"> 
-        <nav aria-label="breadcrumb" style="border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;">
-          <ol class="breadcrumb" style="margin: 0;">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Sản phẩm </a></li>
-            <li class="breadcrumb-item"><a href="#">Trang sức </a></li>
-            <li class="breadcrumb-item active" aria-current="page">Lắc tay</li>
-          </ol>
-        </nav>
         <div class="product-detail"> 
-          <div class="row"> 
-            <div class="col col-1"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-            <div class="col col-6"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-            <div class="col col-5 product-detail__content">
-              <h2 class="product-name"></h2><span>brand</span>
-              <p>955.000đ <span>999.000đ </span></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor omnis facere reprehenderit sint quae accusamus quos sunt in assumenda odit illo nemo delectus, laudantium fugit velit illum, magnam cum quasi.</p>
+          <div class="row product-detail-main-content">
+            <div class="col col-3 col-xl-1">                        
+              <ul class="product-detail-current-list__img">
+                <li class="product-detail-icon">                                <i class="fa-solid fa-arrow-up"></i></li>
+                <li><img src="../assets/images/product13-1.jpg" alt="product9"></li>
+                <li><img src="../assets/images/product13-2.jpg" alt="product13-2"></li>
+                <li><img src="../assets/images/product13-3.jpg" alt="product13-2"></li>
+                <li><img src="../assets/images/product13-4.jpg" alt="product13-2"></li>
+                <li class="product-detail-icon">                                <i class="fa-solid fa-arrow-down"></i></li>
+              </ul>
+            </div>
+            <div class="col col-9 col-xl-6">       
+              <div class="product-detail-current__img"><img src="../assets/images/product13.jpg" alt="product13"></div>
+            </div>
+            <div class="col col-12 col-xl-5 product-detail__content">
+              <h2 class="product-name text-uppercase">Lắc taY TYFFANY XU HƯỚNG MỚI NHẤT</h2><span class="text-uppercase">TYFFANY MS 3201<br></span><span class="price">955.000đ </span><span class="sub-price">999.000đ </span>
+              <p class="description">Không thể phủ nhận, thời trang và phong cách chính là “tuyên ngôn” không lời mạnh mẽ nhất của mỗi người phụ nữ. Do đó, việc mua sắm thời trang trở thành niềm vui, và có khi là nguồn cảm hứng vô tận để phái đẹp sống vui, sống đẹp hơn trong mắt nửa còn lại của thế giới. Để F5 tủ đồ của mình trước những xu hướng ngày một đa dạng hơn trong thế giới thời trang, nhiều chị em không ngần ngại chi tiêu “mạnh tay” để sở hữu những món đồ yêu thích.</p>
               <div class="product-attribuite">
                 <div class="product-attribuite-item">
-                  <h3>Màu sắc</h3>
-                  <select name="color"> 
-                    <option value="tét">tét</option>
-                    <option value="tét">tét</option>
-                    <option value="tét">tét</option>
+                  <h3 class="text-uppercase">Màu sắc</h3>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected="">Trắng </option>
+                    <option value="1">Đỏ</option>
+                    <option value="2">Vàng</option>
+                    <option value="3">Nâu</option>
                   </select>
                 </div>
                 <div class="product-attribuite-item">
-                  <h3>Số lượng</h3>
-                  <button class="btn bg-primary">Mua hàng</button>
-                  <button class="btn bg-primary"> <i class="fa-solid fa-heart"></i></button>
-                  <button class="btn bg-primary"> <i class="fa-solid fa-arrows-rotate"></i></button>
+                  <h3 class="text-uppercase">Size</h3>
+                  <input class="form-control" type="text" placeholder="M">
+                </div>
+                <div class="product-attribuite-item">
+                  <h3 class="text-uppercase">Số lượng</h3>
+                  <input class="form-control" type="number" placeholder="1">
+                </div>
+                <div class="product-attribuite-item">  
+                  <div class="controler"> 
+                    <button class="btn btn-light text-uppercase">Mua hàng    </button>
+                    <button class="btn btn-success"> <i class="fa-solid fa-heart"></i></button>
+                    <button class="btn btn-light"><i class="fa-solid fa-arrows-rotate"></i></button>
+                  </div>
+                </div>
+                <div class="product-attribuite-item"> 
+                  <div class="product-social">Ship & return<img src="../assets/images/detail-social.jpg" alt="detail-social"></div>
                 </div>
               </div>
-              <div class="product-social">
-                Shipping and return   facebook   </div>
             </div>
           </div>
-          <div class="row">   
-            <div class="col col-9">
+          <div class="row product-detail-sub-content">   
+            <div class="col col-12 col-xl-9">
               <div class="product-description"> 
-                <div class="product-description-title"> 
-                  <h3>Đặc điểm nổi bật </h3>
+                <div class="product-description-title border-bottom">
+                  <h3 class="active">Đặc điểm nổi bật </h3>
                   <h3>Thông tin sản phẩm</h3>
                   <h3>Đánh giá</h3>
                 </div>
@@ -95,14 +118,14 @@
                         </div>
                       </div>
                       <div class="col col-5">
-                        <div class="product-description-item-img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+                        <div class="product-description-item-img"> <img src="../assets/images/product13-5.jpg" alt="avatar1"></div>
                       </div>
                     </div>
                   </li>
                   <li class="product-description-item"> 
                     <div class="row"> 
                       <div class="col col-5">
-                        <div class="product-description-item-img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+                        <div class="product-description-item-img"> <img src="../assets/images/product13-5.jpg" alt="avatar1"></div>
                       </div>
                       <div class="col col-7">
                         <div class="product-description-item-content">
@@ -129,79 +152,81 @@
                         </div>
                       </div>
                       <div class="col col-5">
-                        <div class="product-description-item-img"> <img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
+                        <div class="product-description-item-img"> <img src="../assets/images/product13-5.jpg" alt="avatar1"></div>
                       </div>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="col col-3">
+            <div class="col col-12 col-xl-3">
               <section class="related-product">
-                <h2 class="heading">Sản phẩm bán chạy </h2>
-                <ul class="related-product-list">    
-                  <li class="related-product-item">
-                    <div class="row"> 
-                      <div class="col col-4">
-                        <div class="related-product__img"><img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-                      </div>
-                      <div class="col col-8">       
-                        <div class="related-product__content"> 
-                          <h4 class="product-name">My pham chau au </h4>
-                          <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                          <div class="product-price">350.000</div>
+                <div class="related-product-item-container">
+                  <h2 class="heading text-uppercase">Sản phẩm bán chạy </h2>
+                  <ul class="related-product-list">    
+                    <li class="related-product-item">
+                      <div class="row"> 
+                        <div class="col col-4">
+                          <div class="related-product__img"><img src="../assets/images/product13-1.jpg" alt="avatar1"></div>
+                        </div>
+                        <div class="col col-8">       
+                          <div class="related-product__content"> 
+                            <h4 class="product-name">My pham chau au </h4>
+                            <div class="star"><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
+                            <div class="product-price">350.000</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="related-product-item">
-                    <div class="row"> 
-                      <div class="col col-4">
-                        <div class="related-product__img"><img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-                      </div>
-                      <div class="col col-8">       
-                        <div class="related-product__content"> 
-                          <h4 class="product-name">My pham chau au </h4>
-                          <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                          <div class="product-price">350.000đ        </div>
+                    </li>
+                    <li class="related-product-item">
+                      <div class="row"> 
+                        <div class="col col-4">
+                          <div class="related-product__img"><img src="../assets/images/product13-1.jpg" alt="avatar1"></div>
+                        </div>
+                        <div class="col col-8">       
+                          <div class="related-product__content"> 
+                            <h4 class="product-name">My pham chau au </h4>
+                            <div class="star"><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
+                            <div class="product-price">350.000đ        </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
-              </section>
-              <section class="related-product">
-                <h2 class="heading">Sản phẩm bán chạy </h2>
-                <ul class="related-product-list">    
-                  <li class="related-product-item">
-                    <div class="row"> 
-                      <div class="col col-4">
-                        <div class="related-product__img"><img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-                      </div>
-                      <div class="col col-8">       
-                        <div class="related-product__content"> 
-                          <h4 class="product-name">My pham chau au </h4>
-                          <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                          <div class="product-price">350.000</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="related-product-item-container">
+                  <h2 class="heading text-uppercase">Sản phẩm mua nhiều</h2>
+                  <ul class="related-product-list">    
+                    <li class="related-product-item">
+                      <div class="row"> 
+                        <div class="col col-4">
+                          <div class="related-product__img"><img src="../assets/images/product13-1.jpg" alt="avatar1"></div>
+                        </div>
+                        <div class="col col-8">       
+                          <div class="related-product__content"> 
+                            <h4 class="product-name">My pham chau au </h4>
+                            <div class="star"><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
+                            <div class="product-price">350.000</div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                  <li class="related-product-item">
-                    <div class="row"> 
-                      <div class="col col-4">
-                        <div class="related-product__img"><img src="../assets/images/avatar1.jpg" alt="avatar1"></div>
-                      </div>
-                      <div class="col col-8">       
-                        <div class="related-product__content"> 
-                          <h4 class="product-name">My pham chau au </h4>
-                          <div class="start"> <i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
-                          <div class="product-price">350.000đ                                          </div>
+                    </li>
+                    <li class="related-product-item">
+                      <div class="row"> 
+                        <div class="col col-4">
+                          <div class="related-product__img"><img src="../assets/images/product13-1.jpg" alt="avatar1"></div>
+                        </div>
+                        <div class="col col-8">       
+                          <div class="related-product__content"> 
+                            <h4 class="product-name">My pham chau au </h4>
+                            <div class="star"><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i><span>(4 lượt mua)  </span></div>
+                            <div class="product-price">350.000đ                                          </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </li>
-                </ul>
+                    </li>
+                  </ul>
+                </div>
               </section>
             </div>
           </div>

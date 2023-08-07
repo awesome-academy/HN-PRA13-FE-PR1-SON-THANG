@@ -1,0 +1,9 @@
+mixin breadcrumbs(items)
+  nav(aria-label='breadcrumb' style='border-bottom: 1px solid;color: #e6e6e6;padding: 20px 0;')
+    ol.breadcrumb(style='margin: 0;')
+      each item in items
+        if item === items[items.length - 1]
+          li.breadcrumb-item.active(aria-current='page')= item
+        else
+          li.breadcrumb-item
+            a(href='/')= item

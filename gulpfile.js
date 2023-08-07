@@ -3,7 +3,7 @@ const { src, dest, parallel, watch, series } = require("gulp"),
   sass = require("gulp-sass")(require("sass"));
 (pug = require("gulp-pug")), (browserSync = require("browser-sync").create());
 const FilesPath = {
-  sassFiles: "sass/*.scss",
+  sassFiles: "sass/**/*.scss",
   jsFiles: "js/*.js",
   htmlFiles: "pages/*.pug",
 };
