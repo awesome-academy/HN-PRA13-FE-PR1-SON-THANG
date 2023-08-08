@@ -1,0 +1,31 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Blog
+    style.
+      body {
+      font-family: Arial, sans-serif;
+      }
+      .blog-post {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .blog-post img {
+      max-width: 150px;
+      margin-right: 20px;
+      }
+      .blog-post-title {
+      font-size: 20px;
+      font-weight: bold;
+      }
+  body
+    .blog-post
+      img(src='link_anh_1.jpg', alt='Ảnh bài viết 1')
+      .blog-post-title Ti&ecirc;u &dstrok;&#x1EC1; b&agrave;i vi&#x1EBF;t 1
+    .blog-post
+      img(src='link_anh_2.jpg', alt='Ảnh bài viết 2')
+      .blog-post-title Ti&ecirc;u &dstrok;&#x1EC1; b&agrave;i vi&#x1EBF;t 2
+    // Thêm các bài viết khác vào đây

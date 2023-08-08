@@ -1,0 +1,77 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Shop Page
+    style.
+      body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      }
+      .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Chia thành 3 cột bằng nhau */
+      grid-gap: 20px; /* Khoảng cách giữa các sản phẩm */
+      }
+      .product {
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+      .product img {
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+      }
+  body
+    .container
+      .product
+        img(src='./dist/images/gird1.png', alt='Product 1')
+        h3 Product 1
+        p Price: $10.00
+      .product
+        img(src='dist/images/gird1.png', alt='Product 2')
+        h3 Product 2
+        p Price: $15.00
+      .product
+        img(src='dist/images/gird1.png', alt='Product 3')
+        h3 Product 3
+        p Price: $20.00
+      // Thêm các sản phẩm khác vào đây
+    .container
+      .product
+        img(src='dist/images/gird1.png', alt='Product 1')
+        h3 Product 1
+        p Price: $10.00
+      .product
+        img(src='link_to_product_image2.jpg', alt='Product 2')
+        h3 Product 2
+        p Price: $15.00
+      .product
+        img(src='link_to_product_image3.jpg', alt='Product 3')
+        h3 Product 3
+        p Price: $20.00
+      // Thêm các sản phẩm khác vào đây
+    .container
+      .product
+        img(src='link_to_product_image1.jpg', alt='Product 1')
+        h3 Product 1
+        p Price: $10.00
+      .product
+        img(src='link_to_product_image2.jpg', alt='Product 2')
+        h3 Product 2
+        p Price: $15.00
+      .product
+        img(src='link_to_product_image3.jpg', alt='Product 3')
+        h3 Product 3
+        p Price: $20.00
+      // Thêm các sản phẩm khác vào đây
