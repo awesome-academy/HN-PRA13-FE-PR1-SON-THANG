@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Gi&#x1ECF; h&agrave;ng
+    style.
+      body {
+      font-family: Arial, sans-serif;
+      }
+      /* Giỏ hàng container */
+      .cart-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      }
+      /* Sản phẩm trong giỏ hàng */
+      .cart-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      }
+      .cart-item img {
+      max-width: 100px;
+      margin-right: 20px;
+      }
+      .cart-item-info {
+      flex: 1;
+      }
+      .cart-item-title {
+      font-weight: bold;
+      }
+      .cart-item-actions {
+      display: flex;
+      align-items: center;
+      }
+      .cart-item-actions button {
+      margin-right: 10px;
+      background-color: #3498db; /* Màu nền nút */
+      color: #ffffff; /* Màu chữ nút */
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      }
+      .cart-item-actions button:hover {
+      background-color: #2980b9; /* Màu nền nút khi hover */
+      }
+      .cart-item-actions input[type="checkbox"] {
+      margin-right: 5px;
+      }
+      .cart-item-actions label {
+      cursor: pointer;
+      }
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+  body
+    .cart-container
+      .cart-item
+        img(src='./dist/images/Screenshot 2023-08-02 164733.png', alt='Sản phẩm 1')
+        .cart-item-info
+          .cart-item-title S&#x1EA3;n ph&#x1EA9;m 1
+          div S&#x1ED1; l&#x1B0;&#x1EE3;ng: 1
+        .cart-item-actions
+          input#selectItem1(type='checkbox', name='selectItem1')
+          label(for='selectItem1') Ch&#x1ECD;n
+      .cart-item
+        img(src='./dist/images/Screenshot 2023-08-02 164733.png', alt='Sản phẩm 2')
+        .cart-item-info
+          .cart-item-title S&#x1EA3;n ph&#x1EA9;m 2
+          div S&#x1ED1; l&#x1B0;&#x1EE3;ng: 3
+        .cart-item-actions
+          input#selectItem1(type='checkbox', name='selectItem1')
+          label(for='selectItem1') Ch&#x1ECD;n
+      // Thêm các sản phẩm khác vào đây
+    .row.d-flex.justify-content-around(style='max-width: 399px; margin-left: 500px;')
+      .cart-button
+        button.btn.btn-dark(type='button') Ti&#x1EBF;p t&#x1EE5;c mua h&agrave;ng
+      .cart-button
+        button.btn.btn-primary(type='button') X&oacute;a
+      .cart-button
+        button.btn.btn-success(type='button') C&#x1EAD;p nh&#x1EAD;t
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
